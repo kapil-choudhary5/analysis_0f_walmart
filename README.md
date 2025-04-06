@@ -52,6 +52,8 @@ matplotlib==3.7.0+
 seaborn==0.12.0+
 openpyxl==3.1.0+
 ```
+### Clone this repository
+```https://github.com/kapil-choudhary5/analysis_0f_walmart.git```
 
 ### Installation Steps (Windows)
 
