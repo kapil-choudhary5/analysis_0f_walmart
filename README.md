@@ -56,27 +56,56 @@ openpyxl==3.1.0+
 ```https://github.com/kapil-choudhary5/analysis_0f_walmart.git```
 
 ### Installation Steps (Windows)
+1. Download MySQL Installer
 
-1. **Set Up MySQL Database**
-   - Install MySQL Server 8.0+ (Server, Workbench, Connector/Python)
-   - Configure development environment with strong authentication
-   - Create dedicated database and user
+ - Visit the official MySQL download page: https://dev.mysql.com/downloads/installer/
+ - Choose the MySQL Installer for Windows (e.g., mysql-installer-web-community-*.msi for the web installer).
 
-2. **Configure Python Environment**
-   - Install Python 3.8+
-   - Create virtual environment
-   - Install required packages
-   - Clone repository and configure environment variables
+2. Run the Installer
 
-## Usage Instructions
+ - Double-click the downloaded .msi file.
+ - Choose setup type:
 
-1. **Initialize Database**
-   - Configure database parameters
-   - Run setup script
+ - Developer Default: Installs MySQL Server + tools like Workbench.
+ - Server Only: Installs only the MySQL Server.
+ - Custom: Select specific components.
 
-2. **Run Analysis**
-   - Launch Jupyter notebook
-   - Execute cells sequentially to perform analytics, and visualization
+
+
+3. Install MySQL Server
+
+ - Select MySQL Server (e.g., MySQL Server 8.0.x) from the list.
+ - Click Next and follow prompts to install.
+
+4. Configure MySQL Server
+ - After installation, the Configuration Wizard will launch:
+
+ - Choose Standalone MySQL Server.
+ - Type and Networking:
+
+ - Keep default settings (TCP/IP).
+
+5. Authentication Method:
+
+ - Use Strong Password Encryption (Recommended).
+
+6. Set Root Password:
+
+- Create a secure password for the root user.
+Windows Service:
+
+ - Set MySQL to start automatically as a Windows service.
+ - Apply Configuration.
+
+5. Test the Installation
+
+Open Command Prompt or MySQL Shell.
+  - Connect to MySQL:
+  bashCopy
+```mysql -u root -p ```
+
+  - Enter the root password when prompted.
+
 
 ## Analysis Components
 
@@ -95,9 +124,9 @@ openpyxl==3.1.0+
 - Production deployment requires transport security
 - Authentication follows least-privilege principles
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+  - This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
-Data sourced from Walmart retail operations
+## Acknowledgments
+  - Data sourced from Walmart retail operations
 
